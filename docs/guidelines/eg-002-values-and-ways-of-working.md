@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All team members and sites
 - **Enforcement:** Review, retrospectives, ownership register checks
 - **Related:** [EG-008](eg-008-decision-records.md), [EG-024](eg-024-planning-delivery-and-improvement.md), [EG-026](eg-026-competence-tooling-and-onboarding.md)
-- **Principles:** EV-01 to EV-08 (see [principles.md](principles.md))
+- **Principles:** EV-01 to EV-08 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

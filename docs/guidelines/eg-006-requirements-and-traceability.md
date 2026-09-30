@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All product requirements at every level
 - **Enforcement:** CI (trace report and gates), review
 - **Related:** [EG-003](eg-003-quality-policy-and-attributes.md), [EG-008](eg-008-decision-records.md), [EG-014](eg-014-version-control-and-versioning.md), [EG-017](eg-017-testing-principles-and-strategy.md), [EG-023](eg-023-safety-regulatory-and-certification.md)
-- **Principles:** RP-01 to RP-08 (see [principles.md](principles.md))
+- **Principles:** RP-01 to RP-08 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

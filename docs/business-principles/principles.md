@@ -9,13 +9,13 @@ last-reviewed: 2026-09-29
 
 Principles are the reasons behind the rules. Rules say what to do and can be checked. Principles say what to aim for, and decide the cases that no rule covers. When a rule is silent or unclear, apply the relevant principle, say which one you applied, and record any significant decision as an ADR.
 
-This page gathers every principle set in one place. Each set is owned by the guideline named in its heading, and changes to a principle go through an RFC ([EG-008](eg-008-decision-records.md)).
+This page gathers every principle set in one place. Each set is owned by the guideline named in its heading, and changes to a principle go through an RFC ([EG-008](../guidelines/eg-008-decision-records.md)).
 
 ## How to use principles
 
 1. Start with the [start-here list](#start-here), which holds the principles that matter most day to day and for AI agents.
 1. In reviews, cite a principle or rule ID so that feedback is explainable (CPR-02).
-1. Where principles conflict, use the precedence order in [EG-007](eg-007-architecture-principles.md) (PRN-03). A product may tailor that order through its quality attribute profile, recorded in an ADR.
+1. Where principles conflict, use the precedence order in [EG-007](../guidelines/eg-007-architecture-principles.md) (PRN-03). A product may tailor that order through its quality attribute profile, recorded in an ADR.
 1. Where a principle can be checked by a tool, it should be (PRN-04).
 
 > **Note:** Principles are not rules. They are not audited item by item, and they do not override a core rule. A core rule that seems wrong is changed through an RFC and not worked around.
@@ -43,7 +43,7 @@ Fourteen principles to learn first. They cover most day-to-day judgement and are
 
 ## Guiding principles for consistency (GP)
 
-Set out in [EG-001](eg-001-guidelines-governance.md).
+Set out in [EG-001](../guidelines/eg-001-guidelines-governance.md).
 
 | ID | Principle | Statement |
 |----|-----------|-----------|
@@ -60,7 +60,7 @@ Set out in [EG-001](eg-001-guidelines-governance.md).
 
 ## Engineering values (EV)
 
-Set out in [EG-002](eg-002-values-and-ways-of-working.md).
+Set out in [EG-002](../guidelines/eg-002-values-and-ways-of-working.md).
 
 | ID | Principle | Statement |
 |----|-----------|-----------|
@@ -75,7 +75,7 @@ Set out in [EG-002](eg-002-values-and-ways-of-working.md).
 
 ## Requirements and decision principles (RP)
 
-Set out in [EG-006](eg-006-requirements-and-traceability.md) and [EG-008](eg-008-decision-records.md).
+Set out in [EG-006](../guidelines/eg-006-requirements-and-traceability.md) and [EG-008](../guidelines/eg-008-decision-records.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -90,7 +90,7 @@ Set out in [EG-006](eg-006-requirements-and-traceability.md) and [EG-008](eg-008
 
 ## Architecture principles (AP)
 
-Set out in [EG-007](eg-007-architecture-principles.md).
+Set out in [EG-007](../guidelines/eg-007-architecture-principles.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -101,20 +101,20 @@ Set out in [EG-007](eg-007-architecture-principles.md).
 | AP-05 | Simplicity | Choose the simplest design that meets the requirements. Complexity must earn its place. | Fewer components, fewer modes, fewer configuration options. |
 | AP-06 | Budgets are architecture | Flash, RAM, CPU, power, latency and bandwidth are allocated to components and tracked from the start. | Budget table in the architecture document. Size and timing are tracked in CI and a regression fails the gate. |
 | AP-07 | Design for test | Logic is separable from hardware so that it runs on the host, and every component has seams for test doubles and HIL. | Hardware access behind interfaces, dependency injection, no hidden global state. |
-| AP-08 | Design for diagnosis | The system explains its own state and failures. | Logging, fault codes, crash capture and telemetry are architectural components ([EG-019](eg-019-logging-debug-and-diagnostics.md), [EG-020](eg-020-observability-and-telemetry.md)). |
+| AP-08 | Design for diagnosis | The system explains its own state and failures. | Logging, fault codes, crash capture and telemetry are architectural components ([EG-019](../guidelines/eg-019-logging-debug-and-diagnostics.md), [EG-020](../guidelines/eg-020-observability-and-telemetry.md)). |
 | AP-09 | Secure by design | Security is a design property: least privilege, defence in depth, secure defaults, minimal attack surface. | Trust boundaries, threat model and key handling are designed before implementation. |
 | AP-10 | Fail safe and recover | Every fault has defined behaviour, and there is a route back to a known good state. | Watchdog, fault containment, power-fail handling, rollback on a failed update. |
 | AP-11 | Design for the whole lifecycle | Field update, compatibility over time, manufacture, service and end of life are designed in from the outset. | Update mechanism, version compatibility rules, provisioning flow, decommissioning. |
 | AP-12 | Deterministic where it matters | Timing-critical behaviour is predictable and bounded. | Bounded resource use, no dynamic allocation in critical paths, analysable scheduling. |
 | AP-13 | Prefer reversible decisions | Make cheap-to-reverse decisions quickly. Take irreversible ones deliberately, with evidence. | Flash layout, crypto scheme and wire formats need an RFC and an ADR. |
-| AP-14 | Reuse before build, with control | Reuse proven components and buy where sensible, but own the boundary. | Third-party choices go through [EG-011](eg-011-technology-and-third-party.md) and sit behind interfaces (AP-03). |
+| AP-14 | Reuse before build, with control | Reuse proven components and buy where sensible, but own the boundary. | Third-party choices go through [EG-011](../guidelines/eg-011-technology-and-third-party.md) and sit behind interfaces (AP-03). |
 | AP-15 | Check architecture continuously | Architectural intent is enforced by automated checks as well as review. | Dependency rules, budget checks and interface compatibility tests run in the pipeline. |
 | AP-16 | Structure follows ownership | Component boundaries match ownership, so that responsibilities are clear across sites. | Each component has an owner. Cross-site interfaces are contracts (AP-04). |
-| AP-17 | Record the why | Decisions and their reasoning are kept where the code lives. | ADRs ([EG-008](eg-008-decision-records.md)) and architecture documents in the repository ([EG-004](eg-004-documentation-as-code.md)). |
+| AP-17 | Record the why | Decisions and their reasoning are kept where the code lives. | ADRs ([EG-008](../guidelines/eg-008-decision-records.md)) and architecture documents in the repository ([EG-004](../guidelines/eg-004-documentation-as-code.md)). |
 
 ## Coding principles (CP)
 
-Set out in [EG-012](eg-012-coding-principles.md).
+Set out in [EG-012](../guidelines/eg-012-coding-principles.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -122,7 +122,7 @@ Set out in [EG-012](eg-012-coding-principles.md).
 | CP-02 | Simplicity, no speculation | Write the minimum code that solves the stated problem. | No unrequested features, no abstractions for single use, no configurability nobody asked for. |
 | CP-03 | Correct first, then small and fast | Optimise against measured budgets, not intuition. | Measure before optimising. Record the reason for any non-obvious optimisation. |
 | CP-04 | Make wrong code hard to write | Use types, `const`, enumerations and narrow interfaces to prevent misuse. | Distinct types over raw integers, no ambiguous boolean parameters, invalid states unrepresentable where practical. |
-| CP-05 | Validate at boundaries, assert invariants | Check external input where it enters the system. Assert what must never be false. | Every interface, protocol parser and configuration loader validates. Assertion policy follows [EG-019](eg-019-logging-debug-and-diagnostics.md). |
+| CP-05 | Validate at boundaries, assert invariants | Check external input where it enters the system. Assert what must never be false. | Every interface, protocol parser and configuration loader validates. Assertion policy follows [EG-019](../guidelines/eg-019-logging-debug-and-diagnostics.md). |
 | CP-06 | No silent failure | Errors are detected and either handled or propagated, never ignored. | Return values checked, error codes defined, every failure path has defined behaviour. |
 | CP-07 | Predictable resource use | Memory, stack and execution time are bounded and known. | Static allocation by default, bounded loops, stack usage analysed. |
 | CP-08 | No undefined behaviour | Do not rely on behaviour the language leaves undefined or unspecified. | Restricted language subset, warnings as errors, static analysis, sanitisers in host tests. |
@@ -135,14 +135,14 @@ Set out in [EG-012](eg-012-coding-principles.md).
 | CP-15 | Warnings are defects | The build is free of compiler and analyser warnings. | Warnings as errors. Suppressions are inline, justified and reviewed. |
 | CP-16 | Surgical changes | Change only what the task needs, and clean up only what your own change made redundant. | Small diffs. Every changed line traces to the request. Unrelated problems are reported, not fixed in passing. |
 | CP-17 | Secure by habit | Treat all input as untrusted and avoid unsafe constructs. | Banned function list, no secrets in code, safe buffer handling, constant-time comparison for secrets. |
-| CP-18 | Observable by construction | Code emits what is needed to understand its behaviour in the field. | Logging and fault reporting follow [EG-019](eg-019-logging-debug-and-diagnostics.md). |
+| CP-18 | Observable by construction | Code emits what is needed to understand its behaviour in the field. | Logging and fault reporting follow [EG-019](../guidelines/eg-019-logging-debug-and-diagnostics.md). |
 | CP-19 | Duplication over the wrong abstraction | Abstract when a pattern is proven, not before. | Rule of three, and refactor only with tests in place. |
 | CP-20 | Surface assumptions | State assumptions and ask when something is unclear. Present alternatives rather than choosing silently. | Assumptions recorded in the PR description or ADR. Open questions raised before implementation, not after. |
 | CP-21 | Deviations are explicit | When a principle or rule is broken, say so where the code is and record why. | Suppression comments carry the rule ID and justification. Deviation log maintained. |
 
 ## Testing principles (TP)
 
-Set out in [EG-017](eg-017-testing-principles-and-strategy.md).
+Set out in [EG-017](../guidelines/eg-017-testing-principles-and-strategy.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -160,7 +160,7 @@ Set out in [EG-017](eg-017-testing-principles-and-strategy.md).
 
 ## Security principles (SP)
 
-Set out in [EG-022](eg-022-security-and-data-protection.md).
+Set out in [EG-022](../guidelines/eg-022-security-and-data-protection.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -179,7 +179,7 @@ Set out in [EG-022](eg-022-security-and-data-protection.md).
 
 ## Diagnostics and operations principles (OP)
 
-Set out in [EG-019](eg-019-logging-debug-and-diagnostics.md) and [EG-020](eg-020-observability-and-telemetry.md).
+Set out in [EG-019](../guidelines/eg-019-logging-debug-and-diagnostics.md) and [EG-020](../guidelines/eg-020-observability-and-telemetry.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -196,7 +196,7 @@ Set out in [EG-019](eg-019-logging-debug-and-diagnostics.md) and [EG-020](eg-020
 
 ## Lifecycle and release principles (LP)
 
-Set out in [EG-014](eg-014-version-control-and-versioning.md), [EG-016](eg-016-pipelines-and-quality-gates.md) and [EG-021](eg-021-release-update-and-production.md).
+Set out in [EG-014](../guidelines/eg-014-version-control-and-versioning.md), [EG-016](../guidelines/eg-016-pipelines-and-quality-gates.md) and [EG-021](../guidelines/eg-021-release-update-and-production.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -213,7 +213,7 @@ Set out in [EG-014](eg-014-version-control-and-versioning.md), [EG-016](eg-016-p
 
 ## Documentation principles (WP)
 
-Set out in [EG-004](eg-004-documentation-as-code.md).
+Set out in [EG-004](../guidelines/eg-004-documentation-as-code.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|
@@ -230,7 +230,7 @@ Set out in [EG-004](eg-004-documentation-as-code.md).
 
 ## AI agent principles (AIP)
 
-Set out in [EG-005](eg-005-ai-agent-usage.md).
+Set out in [EG-005](../guidelines/eg-005-ai-agent-usage.md).
 
 | ID | Principle | Statement | Typical implications |
 |----|-----------|-----------|----------------------|

@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All firmware, debug tooling and production builds
 - **Enforcement:** Build configuration, CI, review
 - **Related:** [EG-007](eg-007-architecture-principles.md), [EG-012](eg-012-coding-principles.md), [EG-020](eg-020-observability-and-telemetry.md), [EG-022](eg-022-security-and-data-protection.md)
-- **Principles:** OP-01 to OP-10 (see [principles.md](principles.md))
+- **Principles:** OP-01 to OP-10 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

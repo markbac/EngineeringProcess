@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All use of AI coding agents and assistants on team repositories
 - **Enforcement:** CI, branch protection, review
 - **Related:** [EG-004](eg-004-documentation-as-code.md), [EG-011](eg-011-technology-and-third-party.md), [EG-012](eg-012-coding-principles.md), [EG-015](eg-015-pull-requests-and-review.md), [EG-022](eg-022-security-and-data-protection.md)
-- **Principles:** AIP-01 to AIP-11 (see [principles.md](principles.md))
+- **Principles:** AIP-01 to AIP-11 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

@@ -1,16 +1,14 @@
 # Engineering Process & Guidelines
 
-A comprehensive set of 26 engineering guidelines, core rules, checklists, and templates for embedded systems R&D, product teams, and AI coding agents.
+A comprehensive set of 26 generic engineering guidelines, core rules, checklists, template specifications (including OpenAPI and AsyncAPI), and domain principle governance for embedded R&D, product teams, and AI coding agents.
 
 ## Overview
 
-This repository establishes standard ways of working, quality gates, architectural principles, and traceability requirements across hardware and software engineering functions.
+This repository establishes standard ways of working, quality gates, process governance, and traceability requirements across hardware and software engineering functions.
 
-Each guideline includes:
-- **Stable Rule IDs** (e.g. `VCS-03`, `DOC-01`, `CP-02`) for easy reference in pull requests, commits, and AI agent instructions.
-- **Compliance Matrix** with unambiguous RFC 2119 keyword requirements (`MUST`, `SHOULD`, `MAY`).
-- **Checklists** for peer reviews, release readiness, and compliance auditing.
-- **Personal Projects & AI Agent Notes** to adapt standards for solo development or AI pair-programming.
+### Guidelines vs. Business & Vertical Principles
+- **Generic Engineering Guidelines (`EG-001` to `EG-026`):** Standard processes (version control, PR reviews, CI quality gates, interface specification formats, release readiness).
+- **Business & Vertical Principles:** Specific domain rules (e.g., Automotive Embedded, Medical Devices, Cloud SaaS) stored in [`docs/business-principles/`](docs/business-principles/). Guidelines remain generic; principles are configured per business vertical.
 
 ---
 
@@ -18,19 +16,23 @@ Each guideline includes:
 
 ```text
 .
-├── AGENTS.md                   # AI agent rules and standard commands repository root
-├── CLAUDE.md                   # Agent configuration file importing AGENTS.md
-├── README.md                   # Root repository index
+├── AGENTS.md                       # AI agent rules and standard commands repository root
+├── CLAUDE.md                       # Agent configuration file importing AGENTS.md
+├── README.md                       # Root repository index
+├── mkdocs.yml                      # MkDocs static site configuration
 ├── docs/
-│   ├── guidelines/             # Detailed engineering guidelines (EG-001 to EG-026)
-│   │   ├── README.md           # Index, principles, and adoption sequence
-│   │   ├── agent-rules.md      # Condensed guidelines for AI agents
-│   │   ├── checklists.md       # Consolidated checklists for reviews and audits
-│   │   ├── core-rules.md       # Mandatory rules for all projects
+│   ├── index.md                    # Documentation site home page
+│   ├── business-principles/        # Business & Vertical-specific Principles (Architecture, Coding, Domain)
+│   │   ├── README.md               # Decoupling overview and domain selection guide
+│   │   └── principles.md           # Reference business principles catalogue
+│   ├── guidelines/                 # Generic engineering process guidelines (EG-001 to EG-026)
+│   │   ├── README.md               # Index, governance overview, and adoption sequence
+│   │   ├── agent-rules.md          # Condensed guidelines for AI agents
+│   │   ├── checklists.md           # Consolidated checklists for reviews and audits
+│   │   ├── core-rules.md           # Mandatory rules for all projects
 │   │   ├── organisation-adoption.md # Rollout, governance, and two-layer adoption model
-│   │   ├── personal-projects.md     # Starter, Standard, and Full scaling profiles
-│   │   └── principles.md       # Architectural, coding, and quality principles
-│   └── templates-reference/              # Standard templates (ADR, RFC, PR, specifications)
+│   │   └── personal-projects.md     # Starter, Standard, and Full scaling profiles
+│   └── templates-reference/        # Standard templates (ADR, RFC, OpenAPI/AsyncAPI Interface Spec, PR)
 ```
 
 ---
@@ -45,12 +47,12 @@ Each guideline includes:
 | [EG-004](docs/guidelines/eg-004-documentation-as-code.md) | Documentation as Code & Terminology | Foundations | Build & Tooling Lead | 4 / 15 |
 | [EG-005](docs/guidelines/eg-005-ai-agent-usage.md) | AI Agent Usage | Foundations | Build & Tooling / Security Lead | 7 / 15 |
 | [EG-006](docs/guidelines/eg-006-requirements-and-traceability.md) | Requirements & Traceability | Requirements & Architecture | Systems Engineering Lead | 2 / 13 |
-| [EG-007](docs/guidelines/eg-007-architecture-principles.md) | Architecture Principles | Requirements & Architecture | Architecture Group | 0 / 6 |
+| [EG-007](docs/guidelines/eg-007-architecture-principles.md) | Architecture Principles Governance | Requirements & Architecture | Architecture Group | 0 / 6 |
 | [EG-008](docs/guidelines/eg-008-decision-records.md) | Decision Records: RFCs & ADRs | Requirements & Architecture | Architecture Group | 4 / 21 |
 | [EG-009](docs/guidelines/eg-009-interfaces-and-co-design.md) | Interfaces & HW/SW Co-design | Requirements & Architecture | Architecture Group | 0 / 11 |
 | [EG-010](docs/guidelines/eg-010-components-reuse-and-variants.md) | Components, Reuse & Variants | Requirements & Architecture | Architecture Group | 3 / 13 |
 | [EG-011](docs/guidelines/eg-011-technology-and-third-party.md) | Tech Selection & 3rd Party Components | Requirements & Architecture | Architecture Group | 3 / 11 |
-| [EG-012](docs/guidelines/eg-012-coding-principles.md) | Coding Principles | Code & Build | Firmware Lead | 1 / 4 |
+| [EG-012](docs/guidelines/eg-012-coding-principles.md) | Coding Principles Governance | Code & Build | Firmware Lead | 1 / 4 |
 | [EG-013](docs/guidelines/eg-013-coding-standard.md) | Coding Standard | Code & Build | Firmware Lead | 3 / 12 |
 | [EG-014](docs/guidelines/eg-014-version-control-and-versioning.md) | Version Control, Commits & Versioning | Code & Build | Build & Tooling Lead | 9 / 14 |
 | [EG-015](docs/guidelines/eg-015-pull-requests-and-review.md) | Pull Requests & Code Review | Code & Build | Firmware Lead | 4 / 15 |
@@ -71,12 +73,13 @@ Each guideline includes:
 ## Quick Start & Adoption Sequence
 
 1. **Mechanics & Versioning:** Start with [EG-001 Governance](docs/guidelines/eg-001-guidelines-governance.md), [EG-014 Version Control](docs/guidelines/eg-014-version-control-and-versioning.md), and [EG-016 Pipelines](docs/guidelines/eg-016-pipelines-and-quality-gates.md).
-2. **Core Principles:** Review [Principles](docs/guidelines/principles.md) and adopt mandatory [Core Rules](docs/guidelines/core-rules.md).
+2. **Business & Vertical Principles:** Select active domain principles from [Business Principles](docs/business-principles/README.md).
 3. **AI Agent Setup:** Place [AGENTS.md](AGENTS.md) at your project root and refer to [EG-005 AI Agent Usage](docs/guidelines/eg-005-ai-agent-usage.md) and [Agent Rules](docs/guidelines/agent-rules.md).
-4. **Documentation & Review:** Use templates in [`docs/templates-reference/`](docs/templates-reference/) for ADRs, RFCs, and Pull Requests.
+4. **Documentation & Interface Specifications:** Use templates in [`docs/templates-reference/`](docs/templates-reference/) for ADRs, RFCs, OpenAPI/AsyncAPI specifications, and Pull Requests.
 
 ---
 
 ## Documentation Site
 
-This repository is published to **GitHub Pages** via MkDocs. View the interactive documentation at the GitHub Pages site configured for `markbac/EngineeringProcess`.
+This repository is automatically published to **GitHub Pages** via MkDocs and GitHub Actions. View the live documentation site at:
+**[https://markbac.github.io/EngineeringProcess/](https://markbac.github.io/EngineeringProcess/)**

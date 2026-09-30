@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All products, tooling, pipelines, data and AI tool use
 - **Enforcement:** CI, review, security testing, audits
 - **Related:** [EG-005](eg-005-ai-agent-usage.md), [EG-011](eg-011-technology-and-third-party.md), [EG-016](eg-016-pipelines-and-quality-gates.md), [EG-019](eg-019-logging-debug-and-diagnostics.md), [EG-020](eg-020-observability-and-telemetry.md), [EG-021](eg-021-release-update-and-production.md)
-- **Principles:** SP-01 to SP-12 (see [principles.md](principles.md))
+- **Principles:** SP-01 to SP-12 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

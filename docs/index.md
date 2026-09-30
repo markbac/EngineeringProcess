@@ -1,23 +1,21 @@
 # Engineering Process & Guidelines
 
-Welcome to the **Engineering Process & Guidelines** documentation. This suite provides 26 engineering guidelines, core rules, checklists, and templates designed for embedded R&D teams, product developers, and AI agents.
+Welcome to the **Engineering Process & Guidelines** documentation. This repository provides 26 generic engineering guidelines, core rules, checklists, and templates designed for engineering organizations, product developers, and AI agents.
 
 ---
 
-## Key Features
+## Architectural Philosophy: Generic Guidelines vs. Business Principles
 
-- **26 Modular Guidelines:** Covering foundations, architecture, coding, testing, diagnostics, safety, and delivery.
-- **Stable Rule Identifiers:** Testable rules with unique IDs (e.g. `VCS-03`, `DOC-01`, `CP-02`) for code reviews, automated CI checks, and AI prompts.
-- **RFC 2119 Compliance Standards:** Explicit `MUST`, `SHOULD`, and `MAY` rules.
-- **AI Agent-Friendly Architecture:** Explicit instructions and machine-readable conventions for AI coding assistants (`AGENTS.md`).
+- **Generic Guidelines (`EG-001` – `EG-026`):** Establish universal ways of working, quality gates, automated CI workflows, release practices, and interface specification standards across all engineering functions.
+- **Business & Vertical Principles:** Define domain-specific architecture, coding, and development principles (e.g. Embedded R&D, Medical Devices, Cloud SaaS, Automotive). Teams plug in their business/vertical principles into the generic guideline governance framework.
 
 ---
 
 ## Guidelines Structure
 
 1. **Foundations** (EG-001 – EG-005): Governance, values, quality policy, documentation as code, AI agent rules.
-2. **Requirements & Architecture** (EG-006 – EG-011): Traceability, design principles, ADRs/RFCs, interfaces, component reuse, third-party selection.
-3. **Code & Build** (EG-012 – EG-016): Coding principles, standards, version control, pull requests, automated pipelines.
+2. **Requirements & Architecture** (EG-006 – EG-011): Traceability, architecture governance, ADRs/RFCs, interface standards (OpenAPI, AsyncAPI, gRPC, IPC), component reuse, third-party selection.
+3. **Code & Build** (EG-012 – EG-016): Coding principles governance, standards, version control, pull requests, automated pipelines.
 4. **Verification & Diagnostics** (EG-017 – EG-020): Test strategy, technical debt, logging, telemetry.
 5. **Release & Compliance** (EG-021 – EG-023): Release processes, security/data protection, regulatory safety.
 6. **Delivery & People** (EG-024 – EG-026): Planning, research/prototyping, competence and onboarding.
@@ -27,9 +25,11 @@ Welcome to the **Engineering Process & Guidelines** documentation. This suite pr
 ## Quick Navigation
 
 - [Guidelines Overview](guidelines/README.md)
-- [Guiding Principles](guidelines/principles.md)
+- [Business & Vertical Principles Overview](business-principles/README.md)
+- [Reference Principles Catalogue](business-principles/principles.md)
 - [Core Mandatory Rules](guidelines/core-rules.md)
 - [Organisation Adoption Model](guidelines/organisation-adoption.md)
 - [Personal Projects Guide](guidelines/personal-projects.md)
 - [AI Agent Rules](guidelines/agent-rules.md)
 - [Review Checklists](guidelines/checklists.md)
+- [Interface Specification Template (OpenAPI / AsyncAPI)](templates-reference/interface-specification.md)
