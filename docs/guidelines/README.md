@@ -16,7 +16,7 @@ Each guideline has rules with stable IDs, a compliance table, a checklist, and n
 ## Using these guidelines
 
 - **In an organisation with several products:** read [organisation-adoption.md](organisation-adoption.md). Core rules apply everywhere, and each product records its tailoring in a conformance profile.
-- **In a single team:** copy `docs/guidelines/` and `docs/templates/` into the repository, confirm the owner roles, and adopt in the order given below.
+- **In a single team:** copy `docs/guidelines/` and `docs/templates-reference/` into the repository, confirm the owner roles, and adopt in the order given below.
 - **In a personal project:** read [personal-projects.md](personal-projects.md), pick a profile (Starter, Standard or Full) and follow the bootstrap steps.
 - **With AI agents:** put `AGENTS.md` at the repository root and keep [agent-rules.md](agent-rules.md) in the repository. Each guideline also has an AI agents section.
 - **To assess adoption:** use the checklist at the end of each guideline, or the combined [checklists.md](checklists.md).
@@ -87,7 +87,7 @@ AI coding agents and assistants are treated as team members with no tribal knowl
 - [checklists.md](checklists.md): all checklists in one file
 - [personal-projects.md](personal-projects.md): profiles, what to scale down, what never scales down, bootstrap steps
 - [agent-rules.md](agent-rules.md): condensed rules for AI agents
-- `../templates/`: ADR, RFC, requirement, interface specification, NFR scenario, experiment record, postmortem, pull request, agent task brief, product conformance profile and component register templates
+- `../templates-reference/`: ADR, RFC, requirement, interface specification, NFR scenario, experiment record, postmortem, pull request, agent task brief, product conformance profile and component register templates
 - `../../AGENTS.md`: agent instructions to place at the repository root
 
 ## Suggested adoption sequence

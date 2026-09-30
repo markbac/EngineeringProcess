@@ -49,4 +49,4 @@ Builds cleanly, tests pass, lint and analysis are clean, docs are updated, the P
 - Agent rules (condensed): `docs/guidelines/agent-rules.md`
 - Principles: `docs/guidelines/principles.md`
 - Component register: `docs/components.yaml` (where the product has one)
-- Templates: `docs/templates/`
+- Templates: `docs/templates-reference/`

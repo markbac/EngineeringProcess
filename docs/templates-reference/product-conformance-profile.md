@@ -1,3 +1,6 @@
+# Product Conformance Profile Template
+
+```yaml
 ---
 product: Product name
 technical-lead:
@@ -5,6 +8,7 @@ version: 0.1.0
 last-reviewed: YYYY-MM-DD
 review-by: YYYY-MM-DD
 ---
+```
 
 ## Scope
 
