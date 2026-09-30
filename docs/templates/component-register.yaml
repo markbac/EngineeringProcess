@@ -1,0 +1,11 @@
+components:
+  - name: component-name
+    owner: "Name or role"
+    deputy: "Name or role"
+    repository: "git@example.com:group/component.git"
+    version: 0.0.0
+    status: active            # active | maintenance | deprecated | retired
+    consumers: [product-a]
+    interfaces: [IF-XXX-000]
+    variation-points: []
+    third-party: false
