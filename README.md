@@ -30,7 +30,7 @@ Each guideline includes:
 │   │   ├── organisation-adoption.md # Rollout, governance, and two-layer adoption model
 │   │   ├── personal-projects.md     # Starter, Standard, and Full scaling profiles
 │   │   └── principles.md       # Architectural, coding, and quality principles
-│   └── templates/              # Standard templates (ADR, RFC, PR, specifications)
+│   └── templates-reference/              # Standard templates (ADR, RFC, PR, specifications)
 ```
 
 ---
@@ -73,7 +73,7 @@ Each guideline includes:
 1. **Mechanics & Versioning:** Start with [EG-001 Governance](docs/guidelines/eg-001-guidelines-governance.md), [EG-014 Version Control](docs/guidelines/eg-014-version-control-and-versioning.md), and [EG-016 Pipelines](docs/guidelines/eg-016-pipelines-and-quality-gates.md).
 2. **Core Principles:** Review [Principles](docs/guidelines/principles.md) and adopt mandatory [Core Rules](docs/guidelines/core-rules.md).
 3. **AI Agent Setup:** Place [AGENTS.md](AGENTS.md) at your project root and refer to [EG-005 AI Agent Usage](docs/guidelines/eg-005-ai-agent-usage.md) and [Agent Rules](docs/guidelines/agent-rules.md).
-4. **Documentation & Review:** Use templates in [`docs/templates/`](docs/templates/) for ADRs, RFCs, and Pull Requests.
+4. **Documentation & Review:** Use templates in [`docs/templates-reference/`](docs/templates-reference/) for ADRs, RFCs, and Pull Requests.
 
 ---
 

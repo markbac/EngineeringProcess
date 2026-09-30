@@ -147,7 +147,7 @@ Starts at the **Standard** profile (see [personal-projects.md](personal-projects
 
 ### AI agents
 
-- When a decision is significant, hard to reverse or crosses component boundaries, draft an ADR with status `proposed` from `docs/templates/adr.md` instead of implementing silently (ADR-03).
+- When a decision is significant, hard to reverse or crosses component boundaries, draft an ADR with status `proposed` from `docs/templates-reference/adr.md` instead of implementing silently (ADR-03).
 - Do not edit accepted ADRs, supersede them (ADR-04).
 - Read `docs/adr/` before changing behaviour it governs.
 - Record at least two options (ADR-05).

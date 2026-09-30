@@ -20,7 +20,7 @@ The core layer keeps the products consistent where it matters most: anyone can m
 
 ## Product conformance profile
 
-Each product keeps a conformance profile in its repository (GOV-16), using [the template](../templates/product-conformance-profile.md). It records:
+Each product keeps a conformance profile in its repository (GOV-16), using [the template](../templates-reference/product-conformance-profile.md). It records:
 
 - which guidelines apply, and why any do not
 - tailored rules and values, with the reason and who approved them

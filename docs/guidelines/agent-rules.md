@@ -74,7 +74,7 @@ Read this file at the start of every task, together with `AGENTS.md`. Rules cite
 
 ## [EG-008 Decision records: RFCs and ADRs](eg-008-decision-records.md)
 
-- When a decision is significant, hard to reverse or crosses component boundaries, draft an ADR with status `proposed` from `docs/templates/adr.md` instead of implementing silently (ADR-03).
+- When a decision is significant, hard to reverse or crosses component boundaries, draft an ADR with status `proposed` from `docs/templates-reference/adr.md` instead of implementing silently (ADR-03).
 - Do not edit accepted ADRs, supersede them (ADR-04).
 - Read `docs/adr/` before changing behaviour it governs.
 - Record at least two options (ADR-05).

@@ -74,13 +74,13 @@ Working alone does not mean working without controls. When an agent writes code,
 
 ## Bootstrap a new project
 
-1. Create the repository. Copy `docs/guidelines/`, `docs/templates/`, `AGENTS.md` and `CLAUDE.md` into it.
+1. Create the repository. Copy `docs/guidelines/`, `docs/templates-reference/`, `AGENTS.md` and `CLAUDE.md` into it.
 1. Choose your profile. Set `status: active` on the guidelines you adopt, and delete or mark `deprecated` the rest.
 1. Fill in `AGENTS.md`: a project summary and the commands for build, test, lint and everything CI runs.
 1. Add one command (for example `make ci`) that runs the format check, build, tests, lint and secret scan, and point CI at it.
 1. Install a commit-msg hook that enforces Conventional Commits, and a secret scanner as a pre-commit hook.
 1. Protect `main` where your host supports it (required PRs and required checks). Where it does not, adopt the habit of never committing to `main` directly.
-1. Copy `docs/templates/pull-request-template.md` to `.github/pull_request_template.md`, or your host's equivalent.
+1. Copy `docs/templates-reference/pull-request-template.md` to `.github/pull_request_template.md`, or your host's equivalent.
 1. Write ADR-0001: the profile you adopted, the guidelines that do not apply (for example [EG-023](eg-023-safety-regulatory-and-certification.md)), and your top three quality attributes ([EG-003](eg-003-quality-policy-and-attributes.md)).
 1. Add the first requirements to `docs/requirements/` and tag `v0.1.0`.
 
@@ -95,7 +95,7 @@ Working alone does not mean working without controls. When an agent writes code,
 
 ### Each task
 
-- Use the task brief template (`docs/templates/agent-task-brief.md`): goal, requirement IDs, scope, constraints and definition of done.
+- Use the task brief template (`docs/templates-reference/agent-task-brief.md`): goal, requirement IDs, scope, constraints and definition of done.
 - Ask the agent for its assumptions and open questions first (CP-20). For anything larger than a small fix, ask for a short plan before code.
 - Keep tasks small and single-purpose (AGT-10).
 - Require the agent to run the check command and report the results (AGT-09).

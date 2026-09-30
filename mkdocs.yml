@@ -1,0 +1,94 @@
+site_name: Engineering Process & Guidelines
+site_description: Standard engineering guidelines, architecture principles, quality policy, and templates for embedded systems & software teams.
+site_author: Architecture Group
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - admonition
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Overview & Adoption:
+      - Guidelines Overview: guidelines/README.md
+      - Principles: guidelines/principles.md
+      - Core Rules: guidelines/core-rules.md
+      - Organisation Adoption: guidelines/organisation-adoption.md
+      - Personal Projects: guidelines/personal-projects.md
+      - AI Agent Rules: guidelines/agent-rules.md
+      - Checklists: guidelines/checklists.md
+  - Guidelines:
+      - 1. Foundations:
+          - EG-001 Guidelines Governance: guidelines/eg-001-guidelines-governance.md
+          - EG-002 Values & Ways of Working: guidelines/eg-002-values-and-ways-of-working.md
+          - EG-003 Quality Policy & Attributes: guidelines/eg-003-quality-policy-and-attributes.md
+          - EG-004 Documentation as Code: guidelines/eg-004-documentation-as-code.md
+          - EG-005 AI Agent Usage: guidelines/eg-005-ai-agent-usage.md
+      - 2. Requirements & Architecture:
+          - EG-006 Requirements & Traceability: guidelines/eg-006-requirements-and-traceability.md
+          - EG-007 Architecture Principles: guidelines/eg-007-architecture-principles.md
+          - EG-008 Decision Records (RFC/ADR): guidelines/eg-008-decision-records.md
+          - EG-009 Interfaces & Co-Design: guidelines/eg-009-interfaces-and-co-design.md
+          - EG-010 Components, Reuse & Variants: guidelines/eg-010-components-reuse-and-variants.md
+          - EG-011 Tech Selection & 3rd Party: guidelines/eg-011-technology-and-third-party.md
+      - 3. Code & Build:
+          - EG-012 Coding Principles: guidelines/eg-012-coding-principles.md
+          - EG-013 Coding Standard: guidelines/eg-013-coding-standard.md
+          - EG-014 Version Control & Commits: guidelines/eg-014-version-control-and-versioning.md
+          - EG-015 Pull Requests & Review: guidelines/eg-015-pull-requests-and-review.md
+          - EG-016 Pipelines & Quality Gates: guidelines/eg-016-pipelines-and-quality-gates.md
+      - 4. Verification & Diagnostics:
+          - EG-017 Testing Principles & Strategy: guidelines/eg-017-testing-principles-and-strategy.md
+          - EG-018 Defects & Tech Debt: guidelines/eg-018-defects-and-technical-debt.md
+          - EG-019 Logging, Debug & Diagnostics: guidelines/eg-019-logging-debug-and-diagnostics.md
+          - EG-020 Observability & Telemetry: guidelines/eg-020-observability-and-telemetry.md
+      - 5. Release & Compliance:
+          - EG-021 Release, Update & Production: guidelines/eg-021-release-update-and-production.md
+          - EG-022 Security & Data Protection: guidelines/eg-022-security-and-data-protection.md
+          - EG-023 Safety & Regulatory: guidelines/eg-023-safety-regulatory-and-certification.md
+      - 6. Delivery & People:
+          - EG-024 Planning, Delivery & Improvement: guidelines/eg-024-planning-delivery-and-improvement.md
+          - EG-025 Research & Prototyping: guidelines/eg-025-research-and-prototyping.md
+          - EG-026 Competence, Tooling & Onboarding: guidelines/eg-026-competence-tooling-and-onboarding.md
+  - Templates & Specifications:
+      - Architectural Decision Record (ADR): templates-reference/adr.md
+      - Request for Comments (RFC): templates-reference/rfc.md
+      - NFR Scenario: templates-reference/nfr-scenario.md
+      - Interface Specification: templates-reference/interface-specification.md
+      - Experiment Record: templates-reference/experiment-record.md
+      - Postmortem Report: templates-reference/postmortem.md
+      - Pull Request Template: templates-reference/pull-request-template.md
+      - Agent Task Brief: templates-reference/agent-task-brief.md
+      - Product Conformance Profile: templates-reference/product-conformance-profile.md
