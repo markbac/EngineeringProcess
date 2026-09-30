@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All engineering teams, sites and agents
 - **Enforcement:** CI (front matter and link checks), review
 - **Related:** [EG-004](eg-004-documentation-as-code.md), [EG-008](eg-008-decision-records.md)
-- **Principles:** GP-01 to GP-10 (see [principles.md](principles.md))
+- **Principles:** GP-01 to GP-10 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

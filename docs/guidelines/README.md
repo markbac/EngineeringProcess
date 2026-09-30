@@ -81,7 +81,7 @@ AI coding agents and assistants are treated as team members with no tribal knowl
 
 ## Supporting files
 
-- [principles.md](principles.md): the principle sets (guiding, values, requirements, architecture, coding, testing, security, diagnostics, lifecycle, documentation, AI agents) and a start-here list
+- [principles.md](../business-principles/principles.md): the principle sets (guiding, values, requirements, architecture, coding, testing, security, diagnostics, lifecycle, documentation, AI agents) and a start-here list
 - [core-rules.md](core-rules.md): the rules that apply to every product without tailoring
 - [organisation-adoption.md](organisation-adoption.md): two-layer model, conformance profile, owner roles, governance cadence and rollout
 - [checklists.md](checklists.md): all checklists in one file

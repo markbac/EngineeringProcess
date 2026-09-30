@@ -14,7 +14,7 @@ supersedes:
 - **Applies to:** All documentation describing the product, its design or the way it is built
 - **Enforcement:** CI (lint, link check, build), review
 - **Related:** [EG-001](eg-001-guidelines-governance.md), [EG-005](eg-005-ai-agent-usage.md), [EG-008](eg-008-decision-records.md)
-- **Principles:** WP-01 to WP-10 (see [principles.md](principles.md))
+- **Principles:** WP-01 to WP-10 (see [principles.md](../business-principles/principles.md))
 
 > **Note:** Rules marked *(core)* apply to every product and cannot be tailored. Other rules, and all numeric values, are proposed defaults that a product may tailor in its conformance profile ([EG-001](eg-001-guidelines-governance.md)).
 

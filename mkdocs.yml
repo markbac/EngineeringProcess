@@ -1,5 +1,5 @@
 site_name: Engineering Process & Guidelines
-site_description: Standard engineering guidelines, architecture principles, quality policy, and templates for embedded systems & software teams.
+site_description: Standard engineering guidelines, architecture principles governance, quality policy, and templates for embedded systems & software teams.
 site_author: Architecture Group
 
 theme:
@@ -43,13 +43,14 @@ nav:
   - Home: index.md
   - Overview & Adoption:
       - Guidelines Overview: guidelines/README.md
-      - Principles: guidelines/principles.md
+      - Business & Vertical Principles Overview: business-principles/README.md
+      - Reference Principles Catalogue: business-principles/principles.md
       - Core Rules: guidelines/core-rules.md
       - Organisation Adoption: guidelines/organisation-adoption.md
       - Personal Projects: guidelines/personal-projects.md
       - AI Agent Rules: guidelines/agent-rules.md
       - Checklists: guidelines/checklists.md
-  - Guidelines:
+  - Generic Engineering Guidelines:
       - 1. Foundations:
           - EG-001 Guidelines Governance: guidelines/eg-001-guidelines-governance.md
           - EG-002 Values & Ways of Working: guidelines/eg-002-values-and-ways-of-working.md
@@ -58,13 +59,13 @@ nav:
           - EG-005 AI Agent Usage: guidelines/eg-005-ai-agent-usage.md
       - 2. Requirements & Architecture:
           - EG-006 Requirements & Traceability: guidelines/eg-006-requirements-and-traceability.md
-          - EG-007 Architecture Principles: guidelines/eg-007-architecture-principles.md
+          - EG-007 Architecture Principles Governance: guidelines/eg-007-architecture-principles.md
           - EG-008 Decision Records (RFC/ADR): guidelines/eg-008-decision-records.md
           - EG-009 Interfaces & Co-Design: guidelines/eg-009-interfaces-and-co-design.md
           - EG-010 Components, Reuse & Variants: guidelines/eg-010-components-reuse-and-variants.md
           - EG-011 Tech Selection & 3rd Party: guidelines/eg-011-technology-and-third-party.md
       - 3. Code & Build:
-          - EG-012 Coding Principles: guidelines/eg-012-coding-principles.md
+          - EG-012 Coding Principles Governance: guidelines/eg-012-coding-principles.md
           - EG-013 Coding Standard: guidelines/eg-013-coding-standard.md
           - EG-014 Version Control & Commits: guidelines/eg-014-version-control-and-versioning.md
           - EG-015 Pull Requests & Review: guidelines/eg-015-pull-requests-and-review.md
@@ -82,11 +83,14 @@ nav:
           - EG-024 Planning, Delivery & Improvement: guidelines/eg-024-planning-delivery-and-improvement.md
           - EG-025 Research & Prototyping: guidelines/eg-025-research-and-prototyping.md
           - EG-026 Competence, Tooling & Onboarding: guidelines/eg-026-competence-tooling-and-onboarding.md
+  - Business & Vertical Principles:
+      - Principles Overview: business-principles/README.md
+      - Reference Principles Catalogue: business-principles/principles.md
   - Templates & Specifications:
       - Architectural Decision Record (ADR): templates-reference/adr.md
       - Request for Comments (RFC): templates-reference/rfc.md
       - NFR Scenario: templates-reference/nfr-scenario.md
-      - Interface Specification: templates-reference/interface-specification.md
+      - Interface Specification (OpenAPI/AsyncAPI): templates-reference/interface-specification.md
       - Experiment Record: templates-reference/experiment-record.md
       - Postmortem Report: templates-reference/postmortem.md
       - Pull Request Template: templates-reference/pull-request-template.md

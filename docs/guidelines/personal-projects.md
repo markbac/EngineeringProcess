@@ -91,7 +91,7 @@ Working alone does not mean working without controls. When an agent writes code,
 - Keep `AGENTS.md` at the repository root. For Claude Code, `CLAUDE.md` contains `@AGENTS.md` so that both tools read the same instructions.
 - Keep [agent-rules.md](agent-rules.md) in the repository and tell the agent to read it at the start of a task.
 - Keep a short approved-tools list: which AI tools may see which data class ([EG-022](eg-022-security-and-data-protection.md), SEC-10).
-- Point the agent at [principles.md](principles.md). When a rule is silent, the start-here principles decide.
+- Point the agent at [principles.md](../business-principles/principles.md). When a rule is silent, the start-here principles decide.
 
 ### Each task
 

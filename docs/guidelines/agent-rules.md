@@ -21,7 +21,7 @@ Read this file at the start of every task, together with `AGENTS.md`. Rules cite
 1. Propose significant or hard-to-reverse decisions as an ADR with status `proposed` (ADR-03).
 1. Never put secrets or personal data in code, logs, commits or prompts (SEC-05, AGT-08).
 1. Stay out of the agent boundaries unless the task says so: guidelines, `AGENTS.md`, pipeline definitions, CODEOWNERS, secrets and signing material, generated and vendored code, security-relevant code, shared history and certified items (AGT-05).
-1. When a rule is silent or unclear, apply the principles in [principles.md](principles.md), starting with its start-here list. If principles conflict, or the answer is not clear, stop and ask.
+1. When a rule is silent or unclear, apply the principles in [principles.md](../business-principles/principles.md), starting with its start-here list. If principles conflict, or the answer is not clear, stop and ask.
 1. Rules marked *(core)* cannot be tailored. Follow the product's conformance profile for the rest.
 
 ## [EG-001 Guidelines governance](eg-001-guidelines-governance.md)
