@@ -1,0 +1,10 @@
+id: REQ-XX-0000
+title: Short title
+statement: The system shall ...
+type: functional
+level: firmware
+parent: REQ-SYS-0000
+verification: test
+status: draft
+owner:
+rationale: Why this requirement exists.
